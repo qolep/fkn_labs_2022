@@ -64,44 +64,6 @@ private fun Screen() {
 }
 
 
-
-
-
-@OptIn(ExperimentalSnapperApi::class)
-@Composable
-fun Snap(heroes: List<Hero>) {
-
-
-    val lazyListState = rememberLazyListState()
-
-    val layoutInfo: LazyListSnapperLayoutInfo = rememberLazyListSnapperLayoutInfo(lazyListState)
-    val indexLazyList =remember{
-        mutableStateOf(layoutInfo.currentItem?.index)
-    }
-    indexLazyList.value=layoutInfo.currentItem?.index
-
-  //  println(layoutInfo.currentItem?.index)
-
-    when(indexLazyList.value){
-        0 -> BackgroundTriangle(Color.Black )
-        1 -> BackgroundTriangle(Color.Yellow )
-        2 -> BackgroundTriangle(Color.Blue )
-        3 -> BackgroundTriangle(Color.White )
-        4 -> BackgroundTriangle(Color.Magenta )
-    }
-//not working :(
-
-
-    LazyRow(
-        state = lazyListState,
-        flingBehavior = rememberSnapperFlingBehavior(layoutInfo),
-    ) {
-        items(items = heroes) { hero ->
-            HeroCard(hero)
-        }
-    }
-}
-
 @Composable
 fun BackgroundTriangle(backgroundColor: Color) {
     Canvas(
@@ -120,41 +82,4 @@ fun BackgroundTriangle(backgroundColor: Color) {
 }
 
 
-@Composable
-fun HeroCard(hero: Hero) {
 
-    Box(
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(23.dp)
-            .shadow(
-                elevation = 5.dp,
-                shape = RoundedCornerShape(10)
-            )
-    )
-    {
-        Image(
-            painter = painterResource(id = hero.image),
-            contentDescription = hero.description,
-            contentScale = ContentScale.Crop,
-            modifier = Modifier
-                .size(350.dp, 550.dp)
-                .clip(RoundedCornerShape(10))
-        )
-        Box(
-            modifier = Modifier
-                .fillMaxSize()
-                .padding(20.dp)
-                .align(Alignment.BottomCenter)
-        ) {
-            Text(
-                text = hero.name,
-                style = TextStyle(
-                    color = Color.White,
-                    fontSize = 40.sp,
-                    fontWeight = FontWeight.Bold
-                )
-            )
-        }
-    }
-}
