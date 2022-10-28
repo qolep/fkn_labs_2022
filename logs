@@ -1,0 +1,450 @@
+2022-10-28 07:26:50.099 0-0/? E/[Firmware Bug]: CPU1: APIC id mismatch. Firmware: 1 APIC: 0
+2022-10-28 07:26:50.099 0-0/? E/[Firmware Bug]: CPU2: APIC id mismatch. Firmware: 2 APIC: 0
+2022-10-28 07:26:50.099 0-0/? E/[Firmware Bug]: CPU3: APIC id mismatch. Firmware: 3 APIC: 0
+2022-10-28 07:26:50.099 0-0/? E/[Firmware Bug]: CPU4: APIC id mismatch. Firmware: 4 APIC: 0
+2022-10-28 07:26:50.099 0-0/? E/[Firmware Bug]: CPU5: APIC id mismatch. Firmware: 5 APIC: 0
+2022-10-28 07:26:50.099 0-0/? E/[Firmware Bug]: CPU6: APIC id mismatch. Firmware: 6 APIC: 0
+2022-10-28 07:26:50.099 0-0/? E/[Firmware Bug]: CPU7: APIC id mismatch. Firmware: 7 APIC: 0
+2022-10-28 07:26:51.401 0-0/? E/kvm: no hardware support
+2022-10-28 07:26:51.403 0-0/? E/kvm: no hardware support
+2022-10-28 07:26:51.497 0-0/? E/: fail to initialize ptp_kvm
+2022-10-28 07:26:53.117 0-0/? E/init: Failed to copy /avb into /metadata/gsi/dsu/avb/: No such file or directory
+2022-10-28 07:26:54.163 0-0/? E/init: [libfs_avb]Device path not found: /dev/block/by-name/system
+2022-10-28 07:26:55.192 0-0/? E/init: [libfs_avb]Device path not found: /dev/block/by-name/system
+2022-10-28 07:26:55.393 0-0/? E/init: Failed to open package /system/etc/selinux/apex/SEPolicy.zip: No such file or directory
+2022-10-28 07:26:55.619 0-0/? E/selinux: SELinux: Could not get canonical path for /metadata/ota/rollback-indicator restorecon: No such file or directory.
+2022-10-28 07:26:55.620 0-0/? E/selinux:  
+2022-10-28 07:26:55.621 0-0/? E/selinux: SELinux:  Could not stat /metadata/gsi: No such file or directory.
+2022-10-28 07:26:55.622 0-0/? E/selinux:  
+2022-10-28 07:26:56.040 0-0/? E/linkerconfig: Unable to access VNDK APEX at path: /apex/com.android.vndk.v33: No such file or directory
+2022-10-28 07:26:56.042 0-0/? E/linkerconfig: Unable to access VNDK APEX at path: /apex/com.android.vndk.v33: No such file or directory
+2022-10-28 07:26:56.101 0-0/? E/cutils-trace: Error opening trace file: No such file or directory (2)
+2022-10-28 07:26:57.697 0-0/? E/selinux: SELinux:  setxattr failed: /cache:  Read-only file system
+2022-10-28 07:26:57.699 0-0/? E/selinux:  
+2022-10-28 07:26:58.020 292-292/? E/keystore2: keystore2::error: In generate_key.
+    
+    Caused by:
+        0: While generating Key without explicit attestation key.
+        1: Error::Km(ErrorCode(-67))
+2022-10-28 07:26:58.021 284-284/? E/vold: keystore2 Keystore generateKey returned service specific error: -67
+2022-10-28 07:26:58.014 0-0/? E/vold: keystore2 Keystore generateKey returned service specific error: -67
+2022-10-28 07:26:58.430 0-0/? E/init: Unable to set property 'ro.boottime.init.fsck.data' from uid:0 gid:0 pid:284: Read-only property was already set
+2022-10-28 07:26:58.446 0-0/? E/init: Unable to set property 'ro.boottime.init.mount.data' from uid:0 gid:0 pid:284: Read-only property was already set
+2022-10-28 07:26:58.498 292-292/? E/keystore2: keystore2::error: In generate_key.
+    
+    Caused by:
+        0: While generating Key without explicit attestation key.
+        1: Error::Km(ErrorCode(-67))
+2022-10-28 07:26:58.499 284-284/? E/vold: keystore2 Keystore generateKey returned service specific error: -67
+2022-10-28 07:26:58.493 0-0/? E/vold: keystore2 Keystore generateKey returned service specific error: -67
+2022-10-28 07:26:58.546 0-0/? E/init: Failed to set encryption policy of /data/misc to 51d3f85c5924e5b5c67a39b085e65283 v2 modes 1/4 flags 0x2: Directory not empty
+2022-10-28 07:26:58.604 0-0/? E/logwrapper: executing ls failed: Permission denied
+2022-10-28 07:26:58.605 0-0/? E/logwrapper:  
+2022-10-28 07:26:58.611 0-0/? E/init: ls -laZ /data/misc returned failure: 255
+2022-10-28 07:26:58.612 0-0/? E/init: Setting 51d3f85c5924e5b5c67a39b085e65283 policy on /data/misc failed!
+2022-10-28 07:26:58.613 0-0/? E/init: Rebooting into recovery
+2022-10-28 07:26:58.662 292-292/? E/keystore2: keystore2::maintenance: Call to earlyBootEnded failed for security level STRONGBOX: In call_with_watchdog: getting keymint device.
+2022-10-28 07:26:58.662 292-292/? E/keystore2: keystore2::error: In call_with_watchdog: getting keymint device
+    
+    Caused by:
+        0: In get_keymint_device.
+        1: In connect_keymint: Trying to get Legacy wrapper.
+        2: Error::Km(ErrorCode(-68))
+2022-10-28 07:26:58.662 284-284/? E/vold: keystore2 Keystore earlyBootEnded returned service specific error: -68
+2022-10-28 07:26:58.665 292-335/? E/keystore2: keystore2_main: [SQLITE3] 17: statement aborts at 27: [CREATE TABLE IF NOT EXISTS persistent.version (
+                    id INTEGER PRIMARY KEY,
+                    version INTEGER);] database schema has changed
+2022-10-28 07:26:58.656 0-0/? E/vold: keystore2 Keystore earlyBootEnded returned service specific error: -68
+2022-10-28 07:26:58.664 0-0/? E/init: Could not set 'ro.logd.size' to '2M' in /data/local.prop: Read-only property was already set
+2022-10-28 07:26:58.666 0-0/? E/init: Could not load single persistent property file, trying legacy directory: Unable to read persistent property file: open() failed: No such file or directory
+2022-10-28 07:26:58.668 0-0/? E/init: Unable to load legacy persistent properties: Unable to open persistent property directory "/data/property": No such file or directory
+2022-10-28 07:26:58.720 0-0/? E/logd: Cannot read /data/misc/logd/event-log-tags
+2022-10-28 07:26:58.722 0-0/? E/logd: FrameworkListener: read() failed (Connection reset by peer)
+2022-10-28 07:27:00.293 0-0/? E/apexd: Can't open /system_ext/apex for reading : No such file or directory
+2022-10-28 07:27:00.295 0-0/? E/apexd: Can't open /product/apex for reading : No such file or directory
+2022-10-28 07:27:00.296 0-0/? E/apexd: Can't open /vendor/apex for reading : No such file or directory
+2022-10-28 07:27:00.465 292-292/? E/keystore2: keystore2::error: In generate_key.
+    
+    Caused by:
+        0: While generating Key without explicit attestation key.
+        1: Error::Km(ErrorCode(-67))
+2022-10-28 07:27:00.465 284-284/? E/vold: keystore2 Keystore generateKey returned service specific error: -67
+2022-10-28 07:27:00.458 0-0/? E/vold: keystore2 Keystore generateKey returned service specific error: -67
+2022-10-28 07:27:00.489 292-292/? E/keystore2: keystore2::error: In generate_key.
+    
+    Caused by:
+        0: While generating Key without explicit attestation key.
+        1: Error::Km(ErrorCode(-67))
+2022-10-28 07:27:00.489 284-284/? E/vold: keystore2 Keystore generateKey returned service specific error: -67
+2022-10-28 07:27:00.483 0-0/? E/vold: keystore2 Keystore generateKey returned service specific error: -67
+2022-10-28 07:27:00.870 0-0/? E/init: Recovering persistent properties from memory: Unable to read persistent property file: open() failed: No such file or directory
+2022-10-28 07:27:00.972 0-0/? E/selinux: SELinux:  Could not stat /data/dalvik-cache/arm: No such file or directory.
+2022-10-28 07:27:00.974 0-0/? E/selinux:  
+2022-10-28 07:27:00.974 0-0/? E/selinux: SELinux:  Could not stat /data/dalvik-cache/arm64: No such file or directory.
+2022-10-28 07:27:00.976 0-0/? E/selinux:  
+2022-10-28 07:27:00.976 0-0/? E/selinux: SELinux:  Could not stat /data/dalvik-cache/mips: No such file or directory.
+2022-10-28 07:27:00.977 0-0/? E/selinux:  
+2022-10-28 07:27:00.978 0-0/? E/selinux: SELinux:  Could not stat /data/dalvik-cache/mips64: No such file or directory.
+2022-10-28 07:27:00.979 0-0/? E/selinux:  
+2022-10-28 07:27:00.980 0-0/? E/selinux: SELinux:  Could not stat /data/dalvik-cache/x86: No such file or directory.
+2022-10-28 07:27:00.981 0-0/? E/selinux:  
+2022-10-28 07:27:00.982 0-0/? E/selinux: SELinux:  Could not stat /data/dalvik-cache/x86_64: No such file or directory.
+2022-10-28 07:27:00.983 0-0/? E/selinux:  
+2022-10-28 07:27:01.893 426-426/? E/TcUtils: NLMSG_ERROR message return error: -2
+2022-10-28 07:27:01.893 426-426/? E/TcUtils: NLMSG_ERROR message return error: -2
+2022-10-28 07:27:01.893 426-426/? E/TcUtils: NLMSG_ERROR message return error: -2
+2022-10-28 07:27:01.893 426-426/? E/TcUtils: NLMSG_ERROR message return error: -2
+2022-10-28 07:27:01.893 426-426/? E/TcUtils: NLMSG_ERROR message return error: -2
+2022-10-28 07:27:01.893 426-426/? E/TcUtils: NLMSG_ERROR message return error: -2
+2022-10-28 07:27:01.893 426-426/? E/TcUtils: NLMSG_ERROR message return error: -2
+2022-10-28 07:27:01.893 426-426/? E/TcUtils: NLMSG_ERROR message return error: -2
+2022-10-28 07:27:01.893 426-426/? E/TcUtils: NLMSG_ERROR message return error: -2
+2022-10-28 07:27:01.893 426-426/? E/TcUtils: NLMSG_ERROR message return error: -2
+2022-10-28 07:27:01.893 426-426/? E/TcUtils: NLMSG_ERROR message return error: -2
+2022-10-28 07:27:01.894 426-426/? E/TcUtils: NLMSG_ERROR message return error: -2
+2022-10-28 07:27:01.894 426-426/? E/TcUtils: NLMSG_ERROR message return error: -2
+2022-10-28 07:27:01.894 426-426/? E/TcUtils: NLMSG_ERROR message return error: -2
+2022-10-28 07:27:01.894 426-426/? E/TcUtils: NLMSG_ERROR message return error: -2
+2022-10-28 07:27:01.894 426-426/? E/TcUtils: NLMSG_ERROR message return error: -2
+2022-10-28 07:27:01.920 432-432/? E/LegacySupport: Could not get passthrough implementation for android.hardware.audio@7.1::IDevicesFactory/default.
+2022-10-28 07:27:02.015 432-432/? E/LegacySupport: Could not get passthrough implementation for android.hardware.soundtrigger@2.3::ISoundTriggerHw/default.
+2022-10-28 07:27:02.036 438-438/? E/EmulatedCamera_Factory: 0 cameras are being emulated. 0 of them are fake cameras.
+2022-10-28 07:27:02.036 438-438/? E/CamPrvdr@2.4-legacy: setUpVendorTags: Vendor tag operations not fully defined. Ignoring definitions.
+2022-10-28 07:27:02.037 438-438/? E/CamPrvdr@2.4-legacy: initialize: Vendor tag setup failed, will not be available.
+2022-10-28 07:27:02.042 432-432/? E/LegacySupport: Could not get passthrough implementation for android.hardware.bluetooth.audio@2.2::IBluetoothAudioProvidersFactory/default.
+2022-10-28 07:27:02.089 432-432/? E/HidlServiceManagement: Service android.hardware.bluetooth.audio@2.1::IBluetoothAudioProvidersFactory/default must be in VINTF manifest in order to register/get.
+2022-10-28 07:27:02.089 432-432/? E/LegacySupport: Could not register service android.hardware.bluetooth.audio@2.1::IBluetoothAudioProvidersFactory/default (-2147483648).
+2022-10-28 07:27:02.090 432-432/? E/LegacySupport: Could not get passthrough implementation for android.hardware.bluetooth.audio@2.0::IBluetoothAudioProvidersFactory/default.
+2022-10-28 07:27:02.091 432-432/? E/LegacySupport: Could not get passthrough implementation for android.hardware.bluetooth.a2dp@1.0::IBluetoothAudioOffload/default.
+2022-10-28 07:27:02.091 432-432/? E/audiohalservice: Failed to dlopen android.hardware.bluetooth.audio-impl.so: dlopen failed: library "android.hardware.bluetooth.audio-impl.so" not found
+2022-10-28 07:27:02.095 439-439/? E/GCH_CameraProvider: Initialize: HWL doesn't support vendor buffer allocation Function not implemented(-38)
+2022-10-28 07:27:02.158 458-458/? E/RanchuHwc: GetFunction: Unknown function descriptor: 44
+2022-10-28 07:27:02.158 458-458/? E/RanchuHwc: GetFunction: Unknown function descriptor: 45
+2022-10-28 07:27:02.158 458-458/? E/RanchuHwc: GetFunction: Unknown function descriptor: 46
+2022-10-28 07:27:02.158 458-458/? E/RanchuHwc: GetFunction: Unknown function descriptor: 47
+2022-10-28 07:27:02.158 458-458/? E/RanchuHwc: GetFunction: Unknown function descriptor: 48
+2022-10-28 07:27:02.159 458-458/? E/RanchuHwc: GetFunction: Unknown function descriptor: 49
+2022-10-28 07:27:02.159 458-458/? E/RanchuHwc: GetFunction: Unknown function descriptor: 50
+2022-10-28 07:27:02.159 458-458/? E/RanchuHwc: GetFunction: Unknown function descriptor: 51
+2022-10-28 07:27:02.159 458-458/? E/RanchuHwc: GetFunction: Unknown function descriptor: 52
+2022-10-28 07:27:02.159 458-458/? E/RanchuHwc: GetFunction: Unknown function descriptor: 55
+2022-10-28 07:27:02.159 458-458/? E/RanchuHwc: GetFunction: Unknown function descriptor: 56
+2022-10-28 07:27:02.159 458-458/? E/RanchuHwc: GetFunction: Unknown function descriptor: 57
+2022-10-28 07:27:02.159 458-458/? E/RanchuHwc: GetFunction: Unknown function descriptor: 58
+2022-10-28 07:27:02.160 458-458/? E/RanchuHwc: GetFunction: Unknown function descriptor: 59
+2022-10-28 07:27:02.160 458-458/? E/RanchuHwc: GetFunction: Unknown function descriptor: 68
+2022-10-28 07:27:02.160 458-458/? E/RanchuHwc: GetFunction: Unknown function descriptor: 69
+2022-10-28 07:27:02.160 458-458/? E/RanchuHwc: GetFunction: Unknown function descriptor: 70
+2022-10-28 07:27:02.317 511-511/? E/SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+2022-10-28 07:27:02.368 511-511/? E/SurfaceFlinger: Unrecognized RenderEngineType ; ignoring!
+2022-10-28 07:27:02.547 529-529/? E/bootstat: Failed to read /metadata/bootstat/persist.sys.boot.reason: No such file or directory
+2022-10-28 07:27:02.553 529-529/? E/bootstat: Failed to unlink /metadata/bootstat/persist.sys.boot.reason: No such file or directory
+2022-10-28 07:27:02.565 458-458/? E/RanchuHwc: registerCallback unhandled callback: VsyncPeriodTimingChanged
+2022-10-28 07:27:02.565 458-458/? E/RanchuHwc: registerCallback unhandled callback: SeamlessPossible
+2022-10-28 07:27:02.745 573-573/? E/cutils: Failed to read /data/misc/installd/layout_version: No such file or directory
+2022-10-28 07:27:02.925 432-432/? E/android.hardware.audio@7.0-impl.ranchu: device/generic/goldfish/audio/stream_out.cpp:setEventCallback:432 failure: Result::NOT_SUPPORTED
+2022-10-28 07:27:02.926 432-432/? E/android.hardware.audio@7.0-impl.ranchu: device/generic/goldfish/audio/primary_device.cpp:getParameters:211 failure: Result::NOT_SUPPORTED
+2022-10-28 07:27:02.927 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:02.927 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:02.927 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:02.928 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:02.928 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:02.928 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:02.928 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:02.930 432-432/? E/android.hardware.audio@7.0-impl.ranchu: device/generic/goldfish/audio/stream_out.cpp:getPresentationPosition:464 failure: Result::INVALID_STATE
+2022-10-28 07:27:02.935 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:02.935 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:02.935 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:02.935 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:02.962 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:02.962 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:02.964 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:02.965 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:02.965 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:02.965 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:02.965 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:02.966 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:02.967 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:02.968 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:02.968 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:02.975 432-432/? E/android.hardware.audio@7.0-impl.ranchu: device/generic/goldfish/audio/stream_out.cpp:setEventCallback:432 failure: Result::NOT_SUPPORTED
+2022-10-28 07:27:02.977 432-432/? E/android.hardware.audio@7.0-impl.ranchu: device/generic/goldfish/audio/stream_out.cpp:getPresentationPosition:464 failure: Result::INVALID_STATE
+2022-10-28 07:27:02.978 432-457/? E/android.hardware.audio@7.0-impl.ranchu: device/generic/goldfish/audio/primary_device.cpp:getParameters:211 failure: Result::NOT_SUPPORTED
+2022-10-28 07:27:02.978 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:02.978 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:02.978 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:02.978 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:02.978 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:02.979 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:02.979 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:02.981 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:02.981 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:02.981 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:02.981 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:02.984 569-569/? E/CameraProviderManager: addDynamicDepthTags: Advertised depth exclusive tag but value is not present!
+2022-10-28 07:27:02.985 569-569/? E/cameraserver: AidlDeviceInfo3: Failed appending dynamic depth tags: Invalid argument (-22)
+2022-10-28 07:27:03.002 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:03.002 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:03.002 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:03.003 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:03.003 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:03.003 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:03.003 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:03.003 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:03.004 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:03.004 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:03.004 504-504/? E/APM_AudioPolicyManager: invalid volume index range
+2022-10-28 07:27:03.013 550-600/? E/emuglGLESv2_enc: device/generic/goldfish-opengl/system/GLESv2_enc/GL2Encoder.cpp:s_glEnable:4892 GL error 0x500 condition [!GLESv2Validation::allowedEnable(ctx->majorVersion(), ctx->minorVersion(), what)]
+2022-10-28 07:27:03.040 432-456/? E/DevicesFactoryHAL: loadAudioInterface couldn't load audio hw module audio.a2dp (No such file or directory)
+2022-10-28 07:27:03.040 504-504/? E/AudioFlinger: loadHwModule() error -22 loading module a2dp
+2022-10-28 07:27:03.384 427-427/? E/ActivityRecognitionHardware: activity_recognition HAL is deprecated. class_init is effectively a no-op
+2022-10-28 07:27:04.578 427-427/? E/zygote64: Unable to find pattern file or unable to map it for am
+2022-10-28 07:27:05.871 645-645/system_process E/libpsi: No kernel psi monitor support (errno=1)
+2022-10-28 07:27:05.871 645-645/system_process E/LowMemDetector: Failed to register psi trigger
+2022-10-28 07:27:05.892 645-683/system_process E/BluetoothAdapter: Bluetooth service is null
+2022-10-28 07:27:06.020 645-669/system_process E/LocalDisplayAdapter: Can't find display mode with id -1
+2022-10-28 07:27:06.086 0-0/? E/apexd: Can't open /system_ext/apex for reading : No such file or directory
+2022-10-28 07:27:06.087 0-0/? E/apexd: Can't open /product/apex for reading : No such file or directory
+2022-10-28 07:27:06.088 0-0/? E/apexd: Can't open /vendor/apex for reading : No such file or directory
+2022-10-28 07:27:07.859 577-584/? E/ServiceUtilities: getInfo: Cannot find package_native
+2022-10-28 07:27:07.926 581-581/? E/storaged: getService package_native failed
+2022-10-28 07:27:13.020 581-714/? E/storaged: getService package_native failed
+2022-10-28 07:27:13.205 573-579/? E/installd: Invalid path /apex/com.android.cellbroadcast/priv-app/GoogleCellBroadcastServiceModule@330443000: No such file or directory
+2022-10-28 07:27:13.207 573-579/? E/installd: Invalid path /system_ext/priv-app/GoogleServicesFramework: No such file or directory
+2022-10-28 07:27:13.209 573-579/? E/installd: Invalid path /system/framework/framework-res.apk: No such file or directory
+2022-10-28 07:27:13.209 573-579/? E/installd: Invalid path /system_ext/priv-app/SettingsGoogle: No such file or directory
+2022-10-28 07:27:13.506 571-580/? E/idmap2d: no resources were overlaid
+2022-10-28 07:27:13.553 571-733/? E/idmap2d: no resources were overlaid
+2022-10-28 07:27:13.764 645-683/system_process E/BluetoothAdapter: Bluetooth service is null
+2022-10-28 07:27:19.077 425-430/? E/statsd: Uid 1000 does not have the android.permission.REGISTER_STATS_PULL_ATOM permission when registering atom 10110 (-1)
+2022-10-28 07:27:22.828 645-767/system_process E/ReportEncoder: No watchlist hash
+2022-10-28 07:27:24.250 645-645/system_process E/DevicePolicyManager: Error reading version
+    java.nio.file.NoSuchFileException: /data/system/device_policies_version
+        at sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:214)
+        at java.nio.file.Files.newByteChannel(Files.java:361)
+        at java.nio.file.Files.newByteChannel(Files.java:407)
+        at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:384)
+        at java.nio.file.Files.newInputStream(Files.java:152)
+        at java.nio.file.Files.newBufferedReader(Files.java:2784)
+        at java.nio.file.Files.readAllLines(Files.java:3202)
+        at com.android.server.devicepolicy.PolicyVersionUpgrader.readVersion(PolicyVersionUpgrader.java:251)
+        at com.android.server.devicepolicy.PolicyVersionUpgrader.upgradePolicy(PolicyVersionUpgrader.java:71)
+        at com.android.server.devicepolicy.DevicePolicyManagerService.performPolicyVersionUpgrade(DevicePolicyManagerService.java:3103)
+        at com.android.server.devicepolicy.DevicePolicyManagerService.<init>(DevicePolicyManagerService.java:1824)
+        at com.android.server.devicepolicy.DevicePolicyManagerService.<init>(DevicePolicyManagerService.java:1766)
+        at java.lang.reflect.Constructor.newInstance0(Native Method)
+        at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
+        at com.android.server.devicepolicy.DevicePolicyManagerService$Lifecycle.<init>(DevicePolicyManagerService.java:844)
+        at java.lang.reflect.Constructor.newInstance0(Native Method)
+        at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
+        at com.android.server.SystemServiceManager.startService(SystemServiceManager.java:221)
+        at com.android.server.SystemServer.startOtherServices(SystemServer.java:1821)
+        at com.android.server.SystemServer.run(SystemServer.java:939)
+        at com.android.server.SystemServer.main(SystemServer.java:649)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:914)
+2022-10-28 07:27:25.320 645-1009/system_process E/UsbDeviceManagerJNI: could not open control for mtp No such file or directory
+2022-10-28 07:27:25.320 645-1009/system_process E/UsbDeviceManager: Failed to open control for mtp
+2022-10-28 07:27:25.321 645-1009/system_process E/UsbDeviceManagerJNI: could not open control for ptp No such file or directory
+2022-10-28 07:27:25.321 645-1009/system_process E/UsbDeviceManager: Failed to open control for ptp
+2022-10-28 07:27:25.333 645-1001/system_process E/AS.AudioService: error reading spatial audio device settings
+2022-10-28 07:27:25.342 645-1009/system_process E/UsbDeviceManagerJNI: could not open /dev/usb_accessory
+2022-10-28 07:27:25.355 489-489/? E/android.hardware.usb@1.0-service: Failed to open /sys/class/dual_role_usb
+2022-10-28 07:27:25.355 489-1019/? E/android.hardware.usb@1.0-service: creating thread
+2022-10-28 07:27:25.464 645-645/system_process E/AutofillManagerServiceImpl: Bad service name: com.google.android.gms/.autofill.service.AutofillService
+2022-10-28 07:27:25.636 645-645/system_process E/StatsPullAtomCallbackImpl: Failed to init OnDevicePowerMeasurement puller
+2022-10-28 07:27:25.654 645-645/system_process E/DisplayPowerController[0]: failed to set up display white-balance: java.lang.IllegalStateException: cannot find sensor com.google.sensor.color
+2022-10-28 07:27:25.689 645-1031/system_process E/DisplayDeviceConfig: requesting nits when no mapping exists.
+2022-10-28 07:27:25.691 645-1031/system_process E/DisplayDeviceConfig: requesting nits when no mapping exists.
+2022-10-28 07:27:25.693 645-645/system_process E/AppIdleHistory: Unable to read app idle file for user 0
+    java.io.FileNotFoundException: /data/system/users/0/app_idle_stats.xml: open failed: ENOENT (No such file or directory)
+        at libcore.io.IoBridge.open(IoBridge.java:574)
+        at java.io.FileInputStream.<init>(FileInputStream.java:160)
+        at android.util.AtomicFile.openRead(AtomicFile.java:260)
+        at com.android.server.usage.AppIdleHistory.readAppIdleTimes(AppIdleHistory.java:715)
+        at com.android.server.usage.AppIdleHistory.getUserHistory(AppIdleHistory.java:384)
+        at com.android.server.usage.AppIdleHistory.reportUsage(AppIdleHistory.java:372)
+        at com.android.server.usage.AppStandbyController.initializeDefaultsForSystemApps(AppStandbyController.java:2179)
+        at com.android.server.usage.AppStandbyController.onBootPhase(AppStandbyController.java:663)
+        at com.android.server.usage.UsageStatsService.onBootPhase(UsageStatsService.java:354)
+        at com.android.server.SystemServiceManager.startBootPhase(SystemServiceManager.java:294)
+        at com.android.server.SystemServer.startOtherServices(SystemServer.java:2669)
+        at com.android.server.SystemServer.run(SystemServer.java:939)
+        at com.android.server.SystemServer.main(SystemServer.java:649)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:914)
+     Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+        at libcore.io.Linux.open(Native Method)
+        at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+        at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+        at libcore.io.IoBridge.open(IoBridge.java:560)
+        at java.io.FileInputStream.<init>(FileInputStream.java:160) 
+        at android.util.AtomicFile.openRead(AtomicFile.java:260) 
+        at com.android.server.usage.AppIdleHistory.readAppIdleTimes(AppIdleHistory.java:715) 
+        at com.android.server.usage.AppIdleHistory.getUserHistory(AppIdleHistory.java:384) 
+        at com.android.server.usage.AppIdleHistory.reportUsage(AppIdleHistory.java:372) 
+        at com.android.server.usage.AppStandbyController.initializeDefaultsForSystemApps(AppStandbyController.java:2179) 
+        at com.android.server.usage.AppStandbyController.onBootPhase(AppStandbyController.java:663) 
+        at com.android.server.usage.UsageStatsService.onBootPhase(UsageStatsService.java:354) 
+        at com.android.server.SystemServiceManager.startBootPhase(SystemServiceManager.java:294) 
+        at com.android.server.SystemServer.startOtherServices(SystemServer.java:2669) 
+        at com.android.server.SystemServer.run(SystemServer.java:939) 
+        at com.android.server.SystemServer.main(SystemServer.java:649) 
+        at java.lang.reflect.Method.invoke(Native Method) 
+        at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548) 
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:914) 
+2022-10-28 07:27:25.756 645-645/system_process E/TestHarnessModeService: Failed to start Test Harness Mode; no implementation of PersistentDataBlockManagerInternal was bound!
+2022-10-28 07:27:25.781 645-984/system_process E/SupplicantStaIfaceHalAidlImpl: Can't call setDebugParams, ISupplicant is null
+2022-10-28 07:27:25.839 490-490/? E/android.hardware.wifi@1.0-service: Unknown iface name: wlan0
+2022-10-28 07:27:25.839 490-490/? E/android.hardware.wifi@1.0-service: Unknown iface name: wlan0
+2022-10-28 07:27:25.846 490-490/? E/android.hardware.wifi@1.0-service: Unknown iface name: wlan0
+2022-10-28 07:27:25.846 490-490/? E/android.hardware.wifi@1.0-service: Unknown iface name: wlan0
+2022-10-28 07:27:25.852 490-490/? E/android.hardware.wifi@1.0-service: Unknown iface name: wlan0
+2022-10-28 07:27:25.852 490-490/? E/android.hardware.wifi@1.0-service: Unknown iface name: wlan0
+2022-10-28 07:27:25.856 490-490/? E/android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+2022-10-28 07:27:25.859 490-490/? E/android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+2022-10-28 07:27:25.883 645-984/system_process E/SupplicantStaIfaceHalAidlImpl: Can't call getKeyMgmtCapabilities, ISupplicantStaIface is null for iface=wlan0
+2022-10-28 07:27:25.893 645-984/system_process E/SupplicantStaIfaceHalAidlImpl: Can't call getWpaDriverCapabilities, ISupplicantStaIface is null for iface=wlan0
+2022-10-28 07:27:26.051 645-988/system_process E/WifiVendorHal: getBgScanCapabilities(l.836) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+2022-10-28 07:27:26.052 645-984/system_process E/WifiVendorHal: setMultiStaUseCase(l.3512) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+2022-10-28 07:27:26.053 645-984/system_process E/WifiVendorHal: setMultiStaPrimaryConnection(l.3478) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+2022-10-28 07:27:26.129 645-645/system_process E/DefaultPermGrantPolicy: Package not found: com.google.android.apps.setupwizard.searchselector
+2022-10-28 07:27:26.151 645-645/system_process E/DefaultPermGrantPolicy: Package not found: com.google.android.gms.location.history
+2022-10-28 07:27:26.165 645-645/system_process E/DefaultPermGrantPolicy: Package not found: com.google.android.apps.pixelmigrate
+2022-10-28 07:27:26.165 645-645/system_process E/DefaultPermGrantPolicy: Package not found: com.google.android.adservices
+2022-10-28 07:27:26.165 645-645/system_process E/DefaultPermGrantPolicy: Package not found: com.google.android.apps.mediashell
+2022-10-28 07:27:26.166 645-645/system_process E/DefaultPermGrantPolicy: Package not found: com.google.android.apps.tips
+2022-10-28 07:27:26.166 645-645/system_process E/DefaultPermGrantPolicy: Package not found: com.google.android.apps.turbo
+2022-10-28 07:27:26.560 489-489/? E/android.hardware.usb@1.0-service: Failed to open /sys/class/dual_role_usb
+2022-10-28 07:27:26.563 645-674/system_process E/UsbPortManager: port status enquiry failed
+2022-10-28 07:27:26.699 578-594/? E/OmxInfoBuilder: Cannot find an IOmxStore service.
+2022-10-28 07:27:27.022 462-508/? E/Codec2-FilterWrapper: plugin not OK: -19
+2022-10-28 07:27:27.120 645-749/system_process E/AppOps: Bad call made by uid 1000. Package "android" does not belong to uid 1037.
+2022-10-28 07:27:27.125 645-749/system_process E/AppOps: checkOperation
+    java.lang.SecurityException: Specified package "android" under uid 1037 but it is not
+        at com.android.server.appop.AppOpsService.verifyAndGetBypass(AppOpsService.java:4695)
+        at com.android.server.appop.AppOpsService.verifyAndGetBypass(AppOpsService.java:4562)
+        at com.android.server.appop.AppOpsService.checkOperationUnchecked(AppOpsService.java:3251)
+        at com.android.server.appop.AppOpsService.checkOperationImpl(AppOpsService.java:3234)
+        at com.android.server.appop.AppOpsService.-$$Nest$mcheckOperationImpl(Unknown Source:0)
+        at com.android.server.appop.AppOpsService$CheckOpsDelegateDispatcher.lambda$checkOperation$0(AppOpsService.java:7595)
+        at com.android.server.appop.AppOpsService$CheckOpsDelegateDispatcher$$ExternalSyntheticLambda13.apply(Unknown Source:25)
+        at com.android.server.policy.AppOpsPolicy.checkOperation(AppOpsPolicy.java:213)
+        at com.android.server.appop.AppOpsService$CheckOpsDelegateDispatcher.checkOperation(AppOpsService.java:7594)
+        at com.android.server.appop.AppOpsService.checkOperation(AppOpsService.java:3221)
+        at com.android.server.StorageManagerService$StorageManagerInternalImpl.hasExternalStorageAccess(StorageManagerService.java:4827)
+        at com.android.server.am.ProcessList.startProcessLocked(ProcessList.java:1683)
+        at com.android.server.am.ProcessList.startProcessLocked(ProcessList.java:2350)
+        at com.android.server.am.ProcessList.startProcessLocked(ProcessList.java:2490)
+        at com.android.server.am.ActivityManagerService.startIsolatedProcess(ActivityManagerService.java:2812)
+        at com.android.server.am.ActivityManagerService$LocalService.startIsolatedProcess(ActivityManagerService.java:16373)
+        at android.webkit.WebViewLibraryLoader.createRelroFile(WebViewLibraryLoader.java:126)
+        at android.webkit.WebViewLibraryLoader.createRelros(WebViewLibraryLoader.java:170)
+        at android.webkit.WebViewLibraryLoader.prepareNativeLibraries(WebViewLibraryLoader.java:152)
+        at android.webkit.WebViewFactory.onWebViewProviderChanged(WebViewFactory.java:555)
+        at com.android.server.webkit.SystemImpl.onWebViewProviderChanged(SystemImpl.java:174)
+        at com.android.server.webkit.WebViewUpdateServiceImpl.onWebViewProviderChanged(WebViewUpdateServiceImpl.java:351)
+        at com.android.server.webkit.WebViewUpdateServiceImpl.prepareWebViewInSystemServer(WebViewUpdateServiceImpl.java:182)
+        at com.android.server.webkit.WebViewUpdateService.prepareWebViewInSystemServer(WebViewUpdateService.java:129)
+        at com.android.server.SystemServer.lambda$startOtherServices$3$com-android-server-SystemServer(SystemServer.java:2833)
+        at com.android.server.SystemServer$$ExternalSyntheticLambda2.run(Unknown Source:2)
+        at com.android.server.SystemServerInitThreadPool.lambda$submitTask$0$com-android-server-SystemServerInitThreadPool(SystemServerInitThreadPool.java:106)
+        at com.android.server.SystemServerInitThreadPool$$ExternalSyntheticLambda0.run(Unknown Source:6)
+        at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+        at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+        at com.android.internal.util.ConcurrentUtils$1$1.run(ConcurrentUtils.java:65)
+2022-10-28 07:27:27.147 511-525/? E/EGL_emulation: eglQueryContext 3100  EGL_BAD_ATTRIBUTE
+2022-10-28 07:27:27.148 511-525/? E/EGL_emulation: tid 525: eglQueryContext(2122): error 0x3004 (EGL_BAD_ATTRIBUTE)
+2022-10-28 07:27:27.391 645-645/system_process E/GnssLocationProviderJni: android_location_gnss_hal_GnssNative_start_antenna_info_listening: IGnssAntennaInfo interface not available.
+2022-10-28 07:27:27.393 645-645/system_process E/ActivityRecognitionHardware: activity_recognition HAL is deprecated. is_supported is effectively a no-op
+2022-10-28 07:27:27.404 645-666/system_process E/GnssUtilsJni: IGnssConfiguration setEsExtensionSec() failed.
+2022-10-28 07:27:27.404 645-666/system_process E/GnssConfiguration: Unable to set ES_EXTENSION_SEC: 0
+2022-10-28 07:27:27.429 645-666/system_process E/GnssUtilsJni: IGnssConfiguration setBlocklist() failed.
+2022-10-28 07:27:27.710 645-676/system_process E/CountryDetector: Could not instantiate the custom country detector class
+2022-10-28 07:27:27.731 1207-1207/com.google.android.networkstack E/SystemServiceRegistry: No service published for: ethernet
+    android.os.ServiceManager$ServiceNotFoundException: No service published for: ethernet
+        at android.os.ServiceManager.getServiceOrThrow(ServiceManager.java:166)
+        at android.app.SystemServiceRegistry$136.createService(SystemServiceRegistry.java:1814)
+        at android.app.SystemServiceRegistry$CachedServiceFetcher.getService(SystemServiceRegistry.java:1913)
+        at android.app.SystemServiceRegistry.getSystemService(SystemServiceRegistry.java:1590)
+        at android.app.ContextImpl.getSystemService(ContextImpl.java:2120)
+        at android.content.ContextWrapper.getSystemService(ContextWrapper.java:900)
+        at com.android.networkstack.tethering.Tethering.isEthernetSupported(Tethering.java:1550)
+        at com.android.networkstack.tethering.Tethering.makeSupportedDownstreams(Tethering.java:2509)
+        at com.android.networkstack.tethering.Tethering.updateSupportedDownstreams(Tethering.java:2483)
+        at com.android.networkstack.tethering.Tethering.updateConfiguration(Tethering.java:504)
+        at com.android.networkstack.tethering.Tethering.<init>(Tethering.java:357)
+        at com.android.networkstack.tethering.TetheringService.makeTethering(TetheringService.java:88)
+        at com.android.networkstack.tethering.TetheringService.onCreate(TetheringService.java:78)
+        at android.app.ActivityThread.handleCreateService(ActivityThread.java:4515)
+        at android.app.ActivityThread.-$$Nest$mhandleCreateService(Unknown Source:0)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2162)
+        at android.os.Handler.dispatchMessage(Handler.java:106)
+        at android.os.Looper.loopOnce(Looper.java:201)
+        at android.os.Looper.loop(Looper.java:288)
+        at android.app.ActivityThread.main(ActivityThread.java:7898)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+2022-10-28 07:27:28.468 1244-1353/com.android.bluetooth E/bluetooth: packages/modules/Bluetooth/system/gd/storage/legacy_config_file.cc:39 Read: unable to open file '/data/misc/bluedroid/bt_config.conf', error: No such file or directory
+2022-10-28 07:27:28.469 1244-1353/com.android.bluetooth E/bluetooth: packages/modules/Bluetooth/system/gd/storage/legacy_config_file.cc:39 Read: unable to open file '/data/misc/bluedroid/bt_config.bak', error: No such file or directory
+2022-10-28 07:27:28.485 1244-1244/com.android.bluetooth E/droid.bluetooth: [1028/042728.485749:ERROR:message_loop_thread.cc(103)] DoInThreadDelayed: message loop is null for thread bt_main_thread(-1), from pc:0x741c62e091e9
+2022-10-28 07:27:28.485 1244-1244/com.android.bluetooth E/droid.bluetooth: [1028/042728.485886:ERROR:btu_task.cc(94)] do_in_main_thread: failed from pc:0x741c62e091e9
+2022-10-28 07:27:28.486 1244-1244/com.android.bluetooth E/droid.bluetooth: [1028/042728.486010:ERROR:message_loop_thread.cc(103)] DoInThreadDelayed: message loop is null for thread bt_main_thread(-1), from pc:0x741c62e091e9
+2022-10-28 07:27:28.486 1244-1244/com.android.bluetooth E/droid.bluetooth: [1028/042728.486176:ERROR:btu_task.cc(94)] do_in_main_thread: failed from pc:0x741c62e091e9
+2022-10-28 07:27:28.486 1244-1244/com.android.bluetooth E/droid.bluetooth: [1028/042728.486322:ERROR:message_loop_thread.cc(103)] DoInThreadDelayed: message loop is null for thread bt_main_thread(-1), from pc:0x741c62e091e9
+2022-10-28 07:27:28.486 1244-1244/com.android.bluetooth E/droid.bluetooth: [1028/042728.486650:ERROR:btu_task.cc(94)] do_in_main_thread: failed from pc:0x741c62e091e9
+2022-10-28 07:27:28.509 511-601/? E/HWComposer: getDisplayDecorationSupport: getDisplayDecorationSupport failed for display 4619827259835644672: Unsupported (8)
+2022-10-28 07:27:28.655 1291-1291/com.android.phone E/CarrierIdProvider: read carrier list from ota pb failure: java.io.FileNotFoundException: /data/misc/carrierid/carrier_list.pb: open failed: ENOENT (No such file or directory)
+2022-10-28 07:27:28.671 1309-1309/com.google.android.setupwizard E/SetupWizard: [brz] Failed to create external storage directory: /data/user/0/com.google.android.setupwizard/files/metrics
+2022-10-28 07:27:28.721 645-729/system_process E/JobScheduler.Component: Job exists for non-existent package: com.google.android.setupwizard
+2022-10-28 07:27:28.725 1309-1309/com.google.android.setupwizard E/GoogleSettings: Can't set key use_location_for_services in content://com.google.settings/partner
+    java.lang.IllegalArgumentException: Unknown URL content://com.google.settings/partner
+        at android.content.ContentResolver.insert(ContentResolver.java:2189)
+        at android.content.ContentResolver.insert(ContentResolver.java:2155)
+        at amz.a(PG:4)
+        at brc.E(PG:21)
+        at e.F(PG:1)
+        at bre.i(PG:5)
+        at bzy.d(PG:2)
+        at com.google.android.setupwizard.SetupWizardActivity.onCreate(PG:30)
+        at android.app.Activity.performCreate(Activity.java:8290)
+        at android.app.Activity.performCreate(Activity.java:8269)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1384)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3657)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3813)
+        at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:101)
+        at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:135)
+        at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:95)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2308)
+        at android.os.Handler.dispatchMessage(Handler.java:106)
+        at android.os.Looper.loopOnce(Looper.java:201)
+        at android.os.Looper.loop(Looper.java:288)
+        at android.app.ActivityThread.main(ActivityThread.java:7898)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+2022-10-28 07:27:28.731 645-730/system_process E/JobScheduler.Component: Job exists for non-existent package: com.google.android.setupwizard
+2022-10-28 07:27:28.953 1408-1408/com.google.android.gms E/SafebootUtils: Unable to record the restart.
+    java.io.IOException: Failed to create directory
+        at vsg.attachBaseContext(:com.google.android.gms@221821047@22.18.21 (190800-453244992):35)
+        at android.app.Application.attach(Application.java:346)
+        at android.app.Instrumentation.newApplication(Instrumentation.java:1233)
+        at android.app.LoadedApk.makeApplicationInner(LoadedApk.java:1458)
+        at android.app.LoadedApk.makeApplicationInner(LoadedApk.java:1395)
+        at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6746)
+        at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2134)
+        at android.os.Handler.dispatchMessage(Handler.java:106)
+        at android.os.Looper.loopOnce(Looper.java:201)
+        at android.os.Looper.loop(Looper.java:288)
+        at android.app.ActivityThread.main(ActivityThread.java:7898)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+2022-10-28 07:27:29.002 1408-1408/com.google.android.gms E/SfbtRestartFreqCond: Restart directory does not exist
+2022-10-28 07:27:29.711 1207-1241/com.google.android.networkstack E/SystemServiceRegistry: No service published for: ethernet
